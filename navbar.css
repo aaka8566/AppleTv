@@ -1,0 +1,80 @@
+body{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+#navbar{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+  background-color: black;
+ padding-top: 5px;
+}
+#navimg{
+
+width: 90px;
+height: 45px;
+margin-left: 30px;
+}
+#navbar>div>div>button{
+   background-color: #007AFF;
+   color: rgb(245, 237, 237);
+   margin-top: 10px;
+   border-radius: 5px;
+   border: none;
+   font-size: 13px;
+   height: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 2px;
+   padding-right: 2px;
+   padding-bottom: 15px;
+   width: 80%;
+   padding-top: 14px;
+   
+}
+button>img{
+    
+    width: 20%;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-left: 0px;
+    padding-right: 3px;
+}
+#navbar>div{
+    display: flex;
+}
+
+
+#navinput i{
+    position: absolute;
+     padding-top: 6px;
+     color: #A3A3A3;
+     font-size: 15px;
+     padding-left: 5px;
+}
+  
+#navinput{
+    width: 50%;
+    height: 25px;
+    margin-bottom: 10px;
+    display: flex;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 5px ;
+}
+  
+
+  
+#navinput>input{
+    width: 100%;
+    padding: 6px;
+    color: #A3A3A3;
+    border: 0px ;
+    background-color: black;
+    font-size: 15px;
+    border-radius: 5px;
+    font-weight: 900px;
+    padding-left: 25px;
+}

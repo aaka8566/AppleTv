@@ -1,0 +1,11 @@
+#footer{
+    position: absolute;
+    bottom: 0;
+    margin-left: 30px;
+}
+#footer1{
+    color: rgb(148, 145, 145);
+}
+#footer2{
+    color: rgb(56, 53, 53);
+}

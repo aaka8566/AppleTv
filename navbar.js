@@ -12,4 +12,14 @@ const navbar = ()=>{
 </div>`
 }
 
-export { navbar }
+const footer = ()=>{
+    return `  <div id="footer1">
+    <p>Copyright © 2022 Planet Inc. All rights reserved.</p>
+</div>
+<div id="footer2">
+    <p>Internet Service Terms  &nbsp |  &nbsp  Planet Tv & Privacy  &nbsp |   &nbsp Cokkie Warning  &nbsp|  &nbsp  Support </p>
+</div>`
+}
+
+
+export { navbar , footer}

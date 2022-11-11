@@ -8,15 +8,17 @@ import { navbar , footer } from "./navbar.js";
 let navdiv = document.getElementById("navbar");
 
 navdiv.innerHTML = navbar();
-let fa=1;
+
 let footdiv = document.getElementById("footer");
 footdiv.innerHTML= footer();
-// let getthename=JSON.parse(localStorage.getItem("profile"))||[];
-// let catchthebutton=document.getElementById("show");
-// catchthebutton.innerText=getthename.name;
-// if(getthename.name!=null){
-//     catchthebutton.disabled=true;
-// }
+let getthename=JSON.parse(localStorage.getItem("profile"))||[];
+let catchthebutton=document.getElementById("show");
+
+if(getthename.name!=null){
+    catchthebutton.innerText=`${getthename.name}`+"    |   "+"Sign Out";
+}
+else{catchthebutton.innerText="Sign In";}
+
 
 function slideShow(){
     const arr=[
@@ -70,6 +72,9 @@ let showtoknow=false;
     let p=document.createElement("h1");
     p.innerText=`Welcome ${res1.name}`;
    localStorage.setItem("profile",JSON.stringify(res1));
+   setTimeout(function(){
+    window.location.reload();
+   },5000)
     let img=document.createElement("img");
         img.src="https://smallimg.pngkey.com/png/small/330-3307329_cross-thin-comments-cross-icon-black-png.png";
         img.setAttribute("id","cross1");
@@ -169,8 +174,13 @@ let showtoknow=false;
     
     let show=document.getElementById("show");
     show.onclick=()=>{
-        if(showtoknow==false){showdiv();}
-        
+        // if(showtoknow==false){showdiv();}
+        let getthename=JSON.parse(localStorage.getItem("profile"));
+if(getthename!=null){
+    localStorage.removeItem("profile");
+    window.location.reload();
+}
+        else if(getthename==null){showdiv();}
     }
     const showdiv=()=>{
         let blackdiv=document.querySelector(".signupdiv");

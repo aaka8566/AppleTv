@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         #movies {
+          width: 90%;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+
+        grid-template-rows: auto;
+        gap: 30px;
+        margin: auto;
+        justify-items: center;
+        align-items: center;
+      }
+      #movies>div{
+        text-align: center;
+        margin: auto;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+      #textingpop{
+        margin-left: 80px;
+      }
+      
+    </style>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+     <link rel="stylesheet" href="./navbar.css">
+     <link rel="stylesheet" href="./Footer.css">
+</head>
+<body>
+<div>
+  <div id="navbar">
+      </div>
+
+      <!-- Search Movie :
+      <input
+        placeholder="search Movie"
+        id="live_search"
+      /> -->
+      <h2 id="textingpop">Explore Popular Videos</h2>
+
+       <div id="movies" style="height: auto;">
+      </div>
+
+       <div id="footer"> </div>
+
+</body>
+</html>
+
+<script type="module" src="search.js">
+</script>

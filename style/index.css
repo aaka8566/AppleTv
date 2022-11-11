@@ -1,0 +1,277 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;;
+}
+.apple_video>button{
+  height: 36px;
+  border-radius: 6px;
+  padding: 0 16px;
+  text-align: center;
+  vertical-align: middle;
+  background-color: #fff;
+  color: black;
+  font-size: 15px;
+  font-weight: 700;
+  border: none;
+  margin-top: 25px;
+  width: calc(100% - 160px)/5;
+  min-width: 250px;
+  cursor: pointer;
+}
+#slider{
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+#slider img{
+  width: 100%;
+  height: 800px;
+}
+
+
+
+.image_1>a>img{
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 15px;
+   
+}
+
+.image_1>img{
+    width: 100%;
+    border-radius: 15px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
+}
+
+
+.image_1>a>img:hover{
+    opacity: 0.9;
+    background-color: black;
+}
+.image_1{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+}
+
+.image_1>img:hover{
+  opacity: 0.9;
+  background-color: black;
+  
+  cursor: pointer;
+}
+
+
+
+.image_2>img:hover{
+  opacity: 0.9;
+  background-color: black;
+  /* z-index: 1; */
+  cursor: pointer;
+}
+.image_2>img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.image_2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+}
+
+
+
+.img_box2>.img_cards>img:hover{
+  opacity: 0.9;
+  background-color: black;
+  
+  cursor: pointer;
+}
+.image_2>.card1>img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.image_2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+}
+
+
+.card1>h2{
+  color: rgba(0, 0, 0, 0.88); 
+  font-size: 18px;
+    line-height: 1.46667;
+    font-weight: 500;
+}
+.card1>p{
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+
+}
+.img_box2>img:hover{
+  opacity: 0.9;
+  background-color: black;
+ 
+  cursor: pointer;
+}
+.img_box2>img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.img_box2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+}
+
+
+
+.img_box2>.img_cards>img:hover{
+  opacity: 0.9;
+  background-color: black;
+ 
+  cursor: pointer;
+}
+.img_box2>.img_cards>img{
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.img_box2{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(auto);
+    gap: 10px;
+}
+
+
+.img_cards>h2{
+  color: rgba(0, 0, 0, 0.88); 
+  font-size: 18px;
+    line-height: 1.46667;
+    font-weight: 500;
+}
+.img_cards>p{
+  color: rgba(0, 0, 0, 0.56);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 6px;
+
+}
+.img_box>a>img{
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 15px;
+ 
+}
+
+.img_box>img{
+  width: 100%;
+  border-radius: 15px;
+cursor: pointer;
+box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+ 
+}
+
+
+.img_box>a>img:hover{
+  opacity: 0.9;
+  background-color: black;
+ 
+}
+.img_box{
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(auto);
+  gap: 10px;
+}
+
+.img_box>img:hover{
+opacity: 0.9;
+background-color: black;
+
+cursor: pointer;
+}
+
+
+
+
+
+.sliding_Info{
+position: absolute;
+top: 80%;
+left: 50%;
+transform: translate(-50%, -50%);
+
+width: 100%;
+color: #fff;
+text-align: left;
+margin-left: 2%;
+}
+
+#slider>img{
+  width: 100%;
+  height:550px
+  
+}
+/* #hero{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: auto;
+} */
+
+#slider{
+  
+  position: relative;
+  width: 100%;
+}
+
+.poster>img{
+  height: 550px;
+  width:100%;
+  border-radius: 20px;
+}
+ .back-video{
+  position: absolute;
+  right:0;
+  bottom:0;
+  width:100%;
+  height:40%
+}
+/* @media(min-aspect-ratio:16/9){
+  .back-video{
+    width:100%;
+    height:auto;
+  }
+}
+@media(max-aspect-ratio:16/9){
+  .back-video{
+    width:auto;
+    height:100%;
+  }
+}  */
+
+
+
+

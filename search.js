@@ -74,3 +74,13 @@ function append_movie(data) {
     m_div.append(div);
   });
 }
+
+let getthename=JSON.parse(localStorage.getItem("profile"))||[];
+let catchthebutton=document.getElementById("show");
+
+if(getthename.name!=null){
+    catchthebutton.innerText=`${getthename.name}`+"    |   "+"Sign Out";
+    let blackdiv=document.querySelector(".signupdiv");
+    blackdiv.setAttribute("id","showshow");
+}
+else{catchthebutton.innerText="Sign In";}

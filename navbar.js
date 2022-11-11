@@ -1,5 +1,10 @@
+
+
+
+
 const navbar = ()=>{
-    return `<img id="navimg" src="./New folder/logo.png" alt="logo">
+    return `<a href="./index.html">
+    <img id="navimg" src="./New folder/logo.png" alt="logo"></a>
     <div>
         <div id="navinput">
             <i class="fa fa-search icon"></i>

@@ -70,7 +70,7 @@ console.log(response.status);
         getprofile(u,res1.token);
     }
     catch(err){
-        return ;
+        return err;
     }
     }
     
@@ -146,7 +146,7 @@ createnewid.onclick=()=>{
     blackdiv.append(red,img);
     let allfields=document.querySelector(".allfields1");
 let img1=document.createElement("img");
-img1.src="https://tv.apple.com/static-commerce/img/tv.4572edc9.png"
+img1.src="./New folder/logo.png"
 let imgsvg=document.createElement("img");
 img1.setAttribute("class","img1");
 let h2=document.createElement("h2");

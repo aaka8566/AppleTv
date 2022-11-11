@@ -12,7 +12,7 @@ const navbar = ()=>{
 </div>
 <div>
  
-    <button><img src="./New folder/icon_for_button.png" alt="">  Sign In</button>
+    <button id="show"><img  src="./New folder/icon_for_button.png" alt="">  Sign In</button>
 </div>
 </div>`
 }

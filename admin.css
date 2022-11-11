@@ -1,5 +1,5 @@
 body{
-    background-color: white;
+    background-color: wheat;
 }
 img.background{
      position: absolute; 
@@ -20,7 +20,7 @@ img.background{
     width: 100%;
 }
 #main{
-    border:2px solid red;
+    border:0px solid red;
     width: 90%;
     margin: auto;
     display: grid;
@@ -52,7 +52,7 @@ h1{
     color: yellowgreen;
 }
 #showthecontent{
-    border: 2px solid black;
+    border: 0px solid black;
     margin: auto;
     width: 80%;
     display: grid;
@@ -62,7 +62,7 @@ h1{
     align-items: center;
 }
 #showthecontent>div{
-    border: 2px solid red;
+    border: 0px solid red;
     margin:auto;
     display: grid;
     justify-content: center;
@@ -90,9 +90,9 @@ h1{
 /* //old css */
 .signupdiv{
     position:absolute;
-    background-color: rgb(233, 223, 223);
+    background-color: white;
     /* z-index: 10; */
-    border:2px solid black;
+    border:1px solid white;
     width:60%;
     height:650px;
     margin: auto;
@@ -101,8 +101,12 @@ border-radius: 15px;
  margin-left: 20%;
  transition: width 2s;
 }
+.signupdiv>h1{
+    text-align: center;
+    margin-top: 10%;
+}
 .allfields{
-    border:2px solid red;
+    border:0px solid red;
     width: 80%;
     height:60%;
     display: grid;
@@ -110,6 +114,10 @@ border-radius: 15px;
     margin-top: 100px;
     margin-left: 90px;
     /* margin: auto; */
+}
+.allfields p{
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 400;
 }
 .allfields>img{
     width:15%;
@@ -119,10 +127,15 @@ border-radius: 15px;
     width:80%;
      border: none; 
      outline: none;
+     font-size: 15px;
+     color: #494949;
+     font-weight: 500;
+     font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 .allfields>div>div{
-    border: 2px solid grey;
+    border: 1px solid #d2d2d7;
     width:80%;
+    background-color: white;
 }
 .allfields>div>div>img{
     width: 15%;
@@ -131,9 +144,10 @@ border-radius: 15px;
 display: flex;
 }
 #createnewid,#forgotidps{
-border: none;
-color: blue;
-background: white;
+    border: none;
+    color: rgb(0,113,227);
+    background: white;
+    font-size: .875rem;
 }
 #createnewid:hover,#forgotidps:hover{
     text-decoration: underline;
@@ -143,8 +157,8 @@ background: white;
     border: 2px solid grey;
     width:2%;
     position: absolute;
-    top:0%;
-    left:0%;
+    top:2%;
+    left: 2%;
 }
 .cross:hover,#cross1:hover{
     cursor: pointer;
@@ -153,15 +167,15 @@ background: white;
     display: none;
 }
 #cross1{
-    border: 2px solid grey;
+    border: 0px solid grey;
     width:2%;
     position: absolute;
-  top:0%;
-  left: 0%;
+  top:2%;
+  left: 2%;
 }
 .continuepart2{
     width:40%;
-    background-color: blue;
+    background-color:rgb(0,113,227);
     height: 50px;
     border-radius: 10px;
     color: white;
@@ -169,14 +183,14 @@ background: white;
 .img1{
     width:10%;
     margin-bottom: 0px;
-    border: 1px solid black;
+    border: 0px solid black;
 }
 .img2{
     margin-bottom: -15px;
     
 }
 .allfields1{
-    border:2px solid red;
+    border:0px solid red;
     width: 80%;
     height:80%;
     display: grid;
@@ -191,38 +205,48 @@ background: white;
     width:70%;
     text-align: center;
     color: grey;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
 }
 h2{
     margin-top:-15px  ;
-    margin-bottom:0px  ;border: 1px solid black;
+    margin-bottom:0px  ;border: 0px solid black;
 }
 .divlastupper{
     margin: auto;
-    border:2px solid red;
+    border:0px solid red;
     width:90%;
    display: flex; 
 justify-content:space-between;
 }
 .imgpart3cross,.imgpart3apple{
-width:5%;
-border:2px solid black;
+width:3%;
+border:0px solid black;
 cursor: pointer;
 }
 .formdiv{
     margin: auto;
-    border:2px solid red;
+    border:0px solid red;
     width:70%;
+    margin-top: -10px;
 }
 #name,#email,#username,#password,#mobile,#description{
+    border: 1px solid #d2d2d7;
     margin: auto;
     width:90%;
     height:40px;
     margin: 0px 5%;
     margin-bottom: 15px;
     border-radius: 10px ;
+    font-size: 17px;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 ::placeholder{
     color: grey;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 350;
+    font-size: larger;
+    padding: 30px;
 }
 #checkbox{
     margin-left: 5%;
@@ -232,27 +256,47 @@ cursor: pointer;
 .label{
     margin-left: 20px;
     font-size: larger;
+    font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-weight: 600;
 }
 .lastline{
     margin: auto;
-   margin-top: 10px;
-    width:70%;
+    margin-top: 20px;
+     width:70%;
+     font-family: SF Pro Text,SF Pro Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+     font-size: smaller;
 }
 .lastbuttondiv{
     margin: auto;
     margin-top: 10px;
     width: 80%;
-    border: 2px solid pink;
+    border: 0px solid pink;
     padding: 10px;
     display: grid;
     justify-content: flex-end;
     align-items: flex-end; 
 }
+button{
+    border: none;
+}
 .lastbutton{
     padding: 10px;
     color: white;
-    background-color: blue;
+    background-color: rgb(0,113,227);
     border-radius: 7px;
     cursor: pointer;
+    border:none;
+}
+.nowcansignin{
+    margin: auto;
+    margin-top: 10%;
+    margin-left: 40%;
+    text-align: center;
+    padding: 6px;
+    color: white;
+    background-color: rgb(0,113,227);
+    border-radius: 7px;
+    cursor: pointer;
+    border:none;
 }
 /* //old css */

@@ -15,6 +15,8 @@ let blackdiv=document.querySelector(".signupdiv");
 blackdiv.innerHTML=null;
 let p=document.createElement("h1");
 p.innerText=`Welcome ${res1.name}`;
+
+localStorage.setItem("profile",JSON.stringify(res1));
 let img=document.createElement("img");
     img.src="https://smallimg.pngkey.com/png/small/330-3307329_cross-thin-comments-cross-icon-black-png.png";
     img.setAttribute("id","cross1");

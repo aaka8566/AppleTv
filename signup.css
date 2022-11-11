@@ -4,7 +4,11 @@
     height:650px;
     margin: auto;
 border-radius: 15px;
- display: none; 
+ /* display: none;  */
+ visibility: hidden;
+ transition: width 9s;
+ transition: all .9s ease-in-out;
+ opacity: 0;
 }
 .allfields{
     border:2px solid red;
@@ -55,11 +59,16 @@ background: white;
     cursor: pointer;
 }
 #showshow{
-    display: block;
+    /* display: block; */
+    visibility: visible;
+  z-index: 200;
+  opacity: 5;
+   /* top: 10%; */
+   transform: translatey(100px);
 }
 #cross1{
     border: 2px solid grey;
-    width:1%;
+    width:2%;
     position: absolute;
   top:10%;
   left: 22%;
@@ -103,13 +112,14 @@ h2{
 }
 .divlastupper{
     margin: auto;
+    margin-top: 1%;
     border:2px solid red;
     width:90%;
    display: flex; 
 justify-content:space-between;
 }
 .imgpart3cross,.imgpart3apple{
-width:5%;
+width:3%;
 border:2px solid black;
 cursor: pointer;
 }

@@ -21,12 +21,15 @@ let img=document.createElement("img");
     img.setAttribute("id","cross1");
     img.onclick=()=>{
         let blackdiv=document.querySelector(".signupdiv");
-        blackdiv.removeAttribute("id","showshow")
+        blackdiv.setAttribute("id","showshow");
         blackdiv.innerHTML=null;
         showtoknow=true;
     }
-blackdiv.append(p,img);
+
+    blackdiv.append(p,img);
 }
+
+
 
 
 
@@ -59,10 +62,8 @@ const loginstart=(u,p)=>{
                 "Content-Type":"application/json"
             }
         })
-//         const test1=response.headers.get('content-type')?.includes('application/json');
-// if(!response.ok) throw `Error! status: ${response.status}`
 
-console.log(response.status);
+
         let res1=await response.json();
         let b=res1.token;
         console.log(res1.token);
@@ -334,11 +335,11 @@ if(res1.message=="Registration Success"){
     let blackdiv=document.querySelector(".signupdiv");
    let h1=document.createElement("h1");
    h1.innerText="Registered Successfully"
-   blackdiv.innerHTML=null;
+blackdiv.innerHTML=null;
    let nowcansignin=document.createElement("button");
    nowcansignin.innerText="Continue To Sign In";
    nowcansignin.setAttribute("class","nowcansignin");
-
+blackdiv.append(h1,nowcansignin);
 
    nowcansignin.onclick=()=>{
     blackdiv.innerHTML=null;
@@ -450,16 +451,16 @@ const getappenddata=async(tapit)=>{
         let res=await fetch(`https://stormy-headland-68504.herokuapp.com/${tapit}`);
         let res1=await res.json();
         console.log(res1);
-appendadmindata(res1);
+appendadmindata(res1,tapit);
     }
     catch(err){
         console.log(err);
     }
 }
-const appendadmindata=(data)=>{
+const appendadmindata=(data,tapit)=>{
     let showthecontent=document.getElementById("showthecontent");
     showthecontent.innerHTML=null;
-   data.forEach(({poster,name,duration}) => {
+   data.forEach(({id,poster,name,duration}) => {
     let div=document.createElement("div");
     let img=document.createElement("img");
     img.src=poster;
@@ -469,7 +470,9 @@ const appendadmindata=(data)=>{
     p2.innerText=duration;
     let but1=document.createElement("button");
     but1.innerText="REMOVE";
-
+but1.onclick=()=>{
+    removedata(data,id,tapit);
+}
     div.append(img,p1,p2,but1);
     showthecontent.append(div);
    });
@@ -480,14 +483,15 @@ let addaseries=document.getElementById("addseries");
 addaseries.onclick=()=>{
  postdataseries();  
 }
-// let addamovie=document.getElementById("addseries");
-// addamovie.onclick=()=>{
-// //  postdatamovie();  
-// }
-// let addapremiere=document.getElementById("addseries");
-// addapremiere.onclick=()=>{
-// //  postdatapremiere();  
-// }
+
+let addamovie=document.getElementById("addmovie");
+addmovie.onclick=()=>{
+ postdatamovie();  
+}
+let addapremiere=document.getElementById("addpremiere");
+addapremiere.onclick=()=>{
+  postdatapremiere();  
+}
 const postdataseries=async()=>{
     let name=document.getElementById("seriesname").value;
     let poster=document.getElementById("posterseries").value;
@@ -509,4 +513,64 @@ const postdataseries=async()=>{
     });
     let res1=await res.json();
     console.log(res1);
+    getappenddata("series");
+}
+const postdatamovie=async()=>{
+    let name=document.getElementById("moviename").value;
+    let poster=document.getElementById("movieposter").value;
+    let serieslink=document.getElementById("movielink").value;
+    let duration=document.getElementById("movieduration").value;
+    let senddata={
+        name,
+      poster,
+    serieslink,
+    duration
+    }
+    console.log(senddata);
+    let res=await fetch(`https://stormy-headland-68504.herokuapp.com/movies`,{
+        method:"POST",
+        body:JSON.stringify(senddata),
+        headers:{
+           "Content-Type":"application/json"
+        }
+    });
+    let res1=await res.json();
+    console.log(res1);
+    getappenddata("movies");
+}
+const postdatapremiere=async()=>{
+    let name=document.getElementById("premierename").value;
+    let poster=document.getElementById("premiereposter").value;
+    let serieslink=document.getElementById("premierelink").value;
+    let duration=document.getElementById("premiereduration").value;
+    let senddata={
+        name,
+      poster,
+    serieslink,
+    duration
+    }
+    console.log(senddata);
+    let res=await fetch(`https://stormy-headland-68504.herokuapp.com/premiere`,{
+        method:"POST",
+        body:JSON.stringify(senddata),
+        headers:{
+           "Content-Type":"application/json"
+        }
+    });
+    let res1=await res.json();
+    console.log(res1);
+    getappenddata("premiere");
+}
+
+const removedata=async(data,id,tapit)=>{
+    let res=await fetch(`https://stormy-headland-68504.herokuapp.com/${tapit}/${id}`,{
+        method:"DELETE",
+        headers:{
+           "Content-Type":"application/json"
+        }
+    });
+    let res1=await res.json();
+    // console.log(res1);
+      getappenddata(tapit);
+    
 }

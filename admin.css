@@ -1,6 +1,5 @@
 body{
-    background-color: blanchedalmond;
-    /* background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSr-xrxb33gbxQPLID_QX-ErdD-7JhkXOgMzA&usqp=CAU"); */
+    background-color: white;
 }
 img.background{
      position: absolute; 
@@ -9,7 +8,7 @@ img.background{
       z-index: -1;
       width: 100%;
       height: 100%;
-      -webkit-filter: blur(1px); /* Safari 6.0 - 9.0 */
+      -webkit-filter: blur(1px); 
       filter: blur(1px);
 }
 #upperimage{
@@ -84,7 +83,7 @@ h1{
     margin-left: 30%;
     padding: 10px;
     border-radius: 20px;
-}
+} 
 
 
 
@@ -98,8 +97,9 @@ h1{
     height:650px;
     margin: auto;
 border-radius: 15px;
- display: none; 
+ display: block; 
  margin-left: 20%;
+ transition: width 2s;
 }
 .allfields{
     border:2px solid red;
@@ -143,21 +143,21 @@ background: white;
     border: 2px solid grey;
     width:2%;
     position: absolute;
-    top:10%;
-    left: 22%;
+    top:0%;
+    left:0%;
 }
 .cross:hover,#cross1:hover{
     cursor: pointer;
 }
 #showshow{
-    display: block;
+    display: none;
 }
 #cross1{
     border: 2px solid grey;
-    width:1%;
+    width:2%;
     position: absolute;
-  top:10%;
-  left: 22%;
+  top:0%;
+  left: 0%;
 }
 .continuepart2{
     width:40%;

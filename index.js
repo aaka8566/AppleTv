@@ -1,16 +1,15 @@
 import { navbar , footer } from "./navbar.js";
-
-// aakash
-// import {expo} from "./signup.js";
-// let testpopoup=document.getElementById("signupdiv");
-// testpopoup.innerHTML=expo();
-// aakash
 let navdiv = document.getElementById("navbar");
-
 navdiv.innerHTML = navbar();
-
 let footdiv = document.getElementById("footer");
 footdiv.innerHTML= footer();
+let insearch = document.getElementById("searchinput");
+insearch.onclick=function(){
+    window.location.href="./search.html"
+}
+
+
+
 let getthename=JSON.parse(localStorage.getItem("profile"))||[];
 let catchthebutton=document.getElementById("show");
 

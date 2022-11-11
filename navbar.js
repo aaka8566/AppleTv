@@ -8,7 +8,7 @@ const navbar = ()=>{
     <div>
         <div id="navinput">
             <i class="fa fa-search icon"></i>
-    <input type="text"  placeholder="Search" >
+    <input id="searchinput" type="text"  placeholder="Search" >
 </div>
 <div>
  

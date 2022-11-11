@@ -1,4 +1,18 @@
 //old code
+let getthename=JSON.parse(localStorage.getItem("admindata"))||[];
+let catchthebutton=document.getElementById("show");
+
+if(getthename.name!=null){
+    catchthebutton.innerText=`${getthename.name}`+"    |   "+"Sign Out";
+    let blackdiv=document.querySelector(".signupdiv");
+    blackdiv.setAttribute("id","showshow");
+}
+else{catchthebutton.innerText="Sign In";}
+
+
+
+
+
 let showtoknow=false;
 
 const getprofile=async(u,t)=>{
@@ -16,6 +30,20 @@ let blackdiv=document.querySelector(".signupdiv");
 blackdiv.innerHTML=null;
 let p=document.createElement("h1");
 p.innerText=`Welcome ${res1.name}`;
+localStorage.setItem("admindata",JSON.stringify(res1));
+setTimeout(function(){
+    let blackdiv=document.querySelector(".signupdiv");
+    blackdiv.setAttribute("id","showshow");
+    let getthename=JSON.parse(localStorage.getItem("admindata"))||[];
+let catchthebutton=document.getElementById("show");
+
+if(getthename.name!=null){
+    catchthebutton.innerText=`${getthename.name}`+"    |   "+"Sign Out";
+}
+else{catchthebutton.innerText="Sign In";}
+    
+},5000)
+
 let img=document.createElement("img");
     img.src="https://smallimg.pngkey.com/png/small/330-3307329_cross-thin-comments-cross-icon-black-png.png";
     img.setAttribute("id","cross1");
@@ -116,8 +144,16 @@ const loginstart=(u,p)=>{
 
 let show=document.getElementById("show");
 show.onclick=()=>{
-    if(showtoknow==false){showdiv();}
+    // if(showtoknow==false){}
+    let getthename=JSON.parse(localStorage.getItem("admindata"))||null;
+    let catchthebutton=document.getElementById("show");
     
+    if(getthename.name!=null){
+        localStorage.removeItem("admindata");
+        window.location.reload();
+        // catchthebutton.innerText="Sign Out";
+    }
+    else{showdiv();}
 }
 const showdiv=()=>{
     let blackdiv=document.querySelector(".signupdiv");
@@ -396,7 +432,7 @@ divallfields.append(img2,firstp,secondp,divinputforid,but1,but2);
 
 blackdiv.append(img1,divallfields);
 
-    blackdiv.setAttribute("id","showshow");
+    // blackdiv.setAttribute("id","showshow");
 
 
 

@@ -478,3 +478,27 @@ margin-left: 12px;
   text-decoration: underline;
   cursor: pointer;
 }
+#testi{
+  /* display: grid; 
+  grid-template-columns: repeat(3,1fr); */
+  border: 2px solid green;
+  gap: 10px;
+  border-radius: 10px;
+  /* overflow-x: scroll;
+  overflow-y: hidden; */
+  /* overflow: auto; */
+  display: flex;
+  /* white-space: nowrap; */
+  flex-wrap: nowrap;
+  overflow-x: auto;
+
+}
+#testi>div{
+  /* display: inline-block; */
+  flex: 0 0 auto;
+  width:25%;
+}
+#testi img{
+  width: 100%;
+  border-radius: 10px;
+}

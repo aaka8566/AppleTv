@@ -486,5 +486,38 @@ if(getthename!=null){
     }
     
     
+       //appending backend data
+const append=(data)=>{
+    let appenddiv=document.querySelector("#testi");
+    appenddiv.innerHTML=null;
+    data.forEach(({name,poster,serieslink,duration}) => {
+        console.log(name,poster,duration);
+        let p1=document.createElement("p");
+        p1.innerText=name;
+        let p2=document.createElement("p");
+        p2.innerText=duration;
+        let image=document.createElement("img");
+        image.src=poster;
+        let div=document.createElement("div");
+        div.setAttribute("class","img_cards");
+        div.append(image,p1,p2);
+        appenddiv.append(div);
+    });
     
+    
+    
+    }
+    const backendfetch=async()=>{
+        try{
+    let res=await fetch(`https://stormy-headland-68504.herokuapp.com/series`);
+    let res1=await res.json();
+    console.log(res1);
+    append(res1);
+        }
+        catch(err){
+            console.log(err);
+        }
+    }
+    backendfetch();
+        //appending backend data
     

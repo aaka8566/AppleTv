@@ -273,22 +273,22 @@ if(getthename!=null){
     inputemail.setAttribute("id","email");
     
     let inputusername=document.createElement("input");
-    inputusername.setAttribute("placeholder","username");
+    inputusername.setAttribute("placeholder","Username should not contain Characters");
     inputusername.setAttribute("type","text");
     inputusername.setAttribute("id","username");
     
     let inputpassword=document.createElement("input");
-    inputpassword.setAttribute("placeholder","password");
+    inputpassword.setAttribute("placeholder","Password length should be 8 or more ");
     inputpassword.setAttribute("type","password");
     inputpassword.setAttribute("id","password");
     
     let inputmobile=document.createElement("input");
-    inputmobile.setAttribute("placeholder","mobile");
+    inputmobile.setAttribute("placeholder","Mobile");
     inputmobile.setAttribute("type","number");
     inputmobile.setAttribute("id","mobile");
     
     let inputdescription=document.createElement("input");
-    inputdescription.setAttribute("placeholder","description");
+    inputdescription.setAttribute("placeholder","Description");
     inputdescription.setAttribute("type","text");
     inputdescription.setAttribute("id","description");
     

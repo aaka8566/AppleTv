@@ -22,7 +22,7 @@ const footer = ()=>{
     <p>Copyright © 2022 Planet Inc. All rights reserved.</p>
 </div>
 <div id="footer2">
-    <p>Internet Service Terms  &nbsp |  &nbsp  Planet Tv & Privacy  &nbsp |   &nbsp Cokkie Warning  &nbsp|  &nbsp  Support </p>
+    <p>Internet Service Terms  &nbsp |  &nbsp  Planet Tv & Privacy  &nbsp |   &nbsp Cokkie Warning  &nbsp|  &nbsp  Support|  &nbsp <a href="./admin.html">ADMIN LOGIN</a> </p>
 </div>`
 }
 

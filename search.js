@@ -69,7 +69,7 @@ function append_movie(data) {
       };
       data = JSON.stringify(data);
       localStorage.setItem("clicked_video", data);
-      window.location.href = "video.html";
+      window.location.href = "inner.html";
     };
     m_div.append(div);
   });

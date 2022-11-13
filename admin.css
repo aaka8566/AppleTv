@@ -49,7 +49,11 @@ img.background{
     color: white;
 }
 h1{
-    color: white;
+    color:white;
+}
+.signupdiv>h1{
+
+    color: black;
 }
 #showthecontent{
     border: 0px solid black;

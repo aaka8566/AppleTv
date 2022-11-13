@@ -1,0 +1,190 @@
+body{
+
+    padding: 0px;
+    margin: 0px;
+    background-color: #2d2d2d;
+
+}
+h3{
+
+    color: white;
+}
+
+#related{
+
+    margin-left: 30px;
+
+}
+
+#related1{
+
+    display: flex;
+    gap: 10px;
+    
+}
+
+
+#related1>div>img{
+
+    width: 90%;
+    border-radius: 10px;
+
+}
+
+#watch{
+
+    margin-left: 30px;
+
+}
+
+.trial{
+
+    width: 26%;
+    height: auto;
+    
+}
+a{
+    text-decoration: none;
+}
+
+.trial>div:nth-child(2)
+{
+    margin-top: -6px;
+    padding: 12px 0 10px 0;
+    background-color: #1f1f1f;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+}
+.trial>div:nth-child(2)>p{
+
+    margin-left: 10px;
+    
+
+}
+.trial>div>img{
+
+    width: 100%;
+    height: 180px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+}
+
+#cast{
+
+    margin-left: 30px;
+
+}
+
+
+#cast_img{
+
+    display: flex;
+    
+}
+#cast_img>div{
+
+    text-align: center;
+
+}
+#cast_img>div>img{
+
+    width: 75%;
+    border-radius: 100px;
+
+}
+#cast_img>div>img+p{
+
+    color: white;
+
+}
+#cast_img>div>p{
+
+    color: #9a9a9a;
+
+}
+
+
+
+#details{
+
+    background-color: #1f1f1f;
+    padding-top: 10px;
+   
+
+}
+.details1{
+
+    margin-left: 30px;
+
+}
+
+.about{
+
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    
+}
+.about>div{
+
+    width: 47%;
+    border-radius: 8px;
+    background-color: 
+    #363636;
+    padding: 15px;
+    
+}
+.about>div>img{
+
+    width: 20px;
+
+}
+.about>div>b{
+    color: white;
+}
+
+.about>div>p{
+
+    font-size: 15px;
+    color: #9a9a9a;
+
+}
+.about>div>img+span{
+    
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+
+hr{
+
+    width: 90%;
+    height: 0.1px;
+    margin: auto;
+    margin-top: 2%;
+    border-width: 0px;
+    color: #9a9a9a;
+    background-color: #9a9a9a;
+    
+}
+
+.details2{
+    
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   margin-left: 30px;
+   
+}
+
+.details2>div>p{
+    font-size: 13px;
+}
+.change1{
+    color: white;
+}
+.change2{
+    color: #9a9a9a;
+}

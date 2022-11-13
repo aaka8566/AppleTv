@@ -11,8 +11,9 @@ async function search_movie() {
   try {
     let movie_name = document.getElementById("searchinput").value;
 
-    const api_key = "AIzaSyDgdFZNY17Jup6fZqrVtBNDoLNXYgsR5mk";
-    // const api_key="AIzaSyA-qnq9s8f6BDfVX-LpnkBf2bUCO0hMY8w";
+    // const api_key = "AIzaSyDgdFZNY17Jup6fZqrVtBNDoLNXYgsR5mk";
+    //  const api_key="AIzaSyA-qnq9s8f6BDfVX-LpnkBf2bUCO0hMY8w";
+    const api_key="AIzaSyD_8a4-NOFW8zpXSp3PEbst9PQDAj0kDKs";
     let response = await fetch(
       `https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=20&q=${movie_name}&key=${api_key}`
     );

@@ -1,5 +1,5 @@
 body{
-    background-color: wheat;
+    background-color: black;
 }
 img.background{
      position: absolute; 
@@ -34,7 +34,7 @@ img.background{
     margin: auto;
     width: 90%;
     margin-bottom: 8px;
-    background-color: rgb(219, 205, 205);
+    background-color: white;
     height:30px;
 }
 ::placeholder{
@@ -42,14 +42,14 @@ img.background{
 }
 #main button{
     margin-left: 5%;
-    padding: 15px;
+    padding: 10px;
     border-radius: 10px;
-    background-color: burlywood;
+    background-color: #007AFF;
     font-size: medium;
-    color: azure;
+    color: white;
 }
 h1{
-    color: yellowgreen;
+    color: white;
 }
 #showthecontent{
     border: 0px solid black;
@@ -300,3 +300,43 @@ button{
     border:none;
 }
 /* //old css */
+#ad{
+    font-size: 50px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+}
+#ad1div>a>img{
+    width: 90px;
+    height: 45px;
+    margin-left: 30px;
+}
+
+#ad1div{
+    display: flex;
+    justify-content: space-between;
+}
+#ad1div>button{
+    background-color: #007AFF;
+    color: rgb(245, 237, 237);
+    margin-top: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 15px;
+    width: auto;
+    padding-top: 14px;
+}
+#ad1div>button>img{
+    width: 20%;
+    padding-bottom: 5px;
+    padding-top: 8px;
+    padding-left: 0px;
+    padding-right: 3px;
+}

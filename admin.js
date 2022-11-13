@@ -182,7 +182,7 @@ createnewid.onclick=()=>{
     blackdiv.append(red,img);
     let allfields=document.querySelector(".allfields1");
 let img1=document.createElement("img");
-img1.src="https://tv.apple.com/static-commerce/img/tv.4572edc9.png"
+img1.src="./New folder/logo.png"
 let imgsvg=document.createElement("img");
 img1.setAttribute("class","img1");
 let h2=document.createElement("h2");
@@ -227,7 +227,7 @@ blackdiv.append(divlast);
 
 
 let h1=document.createElement("h1");
-h1.innerText="Create Apple Account";
+h1.innerText="Create Planet Account";
 h1.style="text-align:center"
 
 //formdiv
@@ -279,7 +279,7 @@ formdiv.append(form,inputcheckbox,label)
 //form ends here
 
 let lastline=document.createElement("p");
-lastline.innerText="You acknowledge that you agree to the Apple Media Services Terms & Conditions when you select Continue.";
+lastline.innerText="You acknowledge that you agree to the Planet Media Services Terms & Conditions when you select Continue.";
 lastline.setAttribute("class","lastline")
 let lastbuttondiv=document.createElement("div");
 lastbuttondiv.setAttribute("class","lastbuttondiv")

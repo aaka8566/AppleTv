@@ -2,17 +2,12 @@ body{
 
     padding: 0px;
     margin: 0px;
+    background-color: #2d2d2d;
 
 }
 h3{
 
     color: white;
-}
-
-#bgcolor{
-
-    background-color: #2d2d2d;
-
 }
 
 #related{
